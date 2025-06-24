@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket = "terraform-updatebucket-sujeet"
+    bucket = "terrafbucketmy"
     key    = "us-west-1/terraform.tfstate"
     region = "us-west-1"
   }
@@ -214,7 +214,7 @@ module "eks" {
       instance_types = ["t3.medium"]
       name           = "default"
       ami_type       = "AL2_x86_64"
-      key_name       = "practise1"
+      key_name       = "akey"
     }
   }
 }
